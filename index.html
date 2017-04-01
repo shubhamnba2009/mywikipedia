@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wikipedia</title>
+    <!--CSS for the Home page-->
+    <link rel="stylesheet" href="css/mainpage.css" type="text/css">
+    <script src ="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="nav">
+        <header class="header">
+            <a class="logo">My Wikipedia</a>
+            <!--Hamburger Icon in case of mobile display-->
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <!--Input for the search Query-->
+                <li><input type = "text" name="search" id="input-box"></li>
+                <!--Languages dropdown-->
+                <li><select id="language"></select></li>
+                <!--Submit button-->
+                <li><input type = "submit" value="Fetch" class="find-button" onclick="displayContent()"></li>
+            </ul>
+        </header>
+    </div>
+    <!--Horizontal black line-->
+    <hr size="5" color="black">
+    <!--Search Query Title display-->
+    <h1 id="title_name" align="center"></h1>
+    <!--Search query content display-->
+    <div id="dispContent"></div>
+</div>
+</body>
+<!--included javascript link-->
+<script type="text/javascript" src="js/langcode.js"></script>
+
+</html>
